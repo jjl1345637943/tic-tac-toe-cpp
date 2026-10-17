@@ -1,0 +1,10 @@
+^C:\USERS\JJL\TIC-TAC-TOE-CPP\CMAKELISTS.TXT
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SC:/Users/jjl/tic-tac-toe-cpp -BC:/Users/jjl/tic-tac-toe-cpp/build --check-stamp-file C:/Users/jjl/tic-tac-toe-cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
